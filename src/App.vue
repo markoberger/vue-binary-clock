@@ -3,10 +3,15 @@
     <div class="logo">
       <img src="./assets/logo.png" />
     </div>
+    
   <div class="clock">
     <Value :inputValue="hours" />
     <Value :inputValue="minutes" :indicatorLength="6" />
     <Value :inputValue="seconds" :indicatorLength="6" />
+  </div>
+  <div class="links">
+    <font-awesome-icon :icon="['fab', 'github']" size="6x"  :style="{ color: '#29a19c' }" />
+    <font-awesome-icon :icon="['fab', 'dev']" size="6x"  :style="{ color: '#29a19c' }" />
   </div>
   </div>
 </template>
@@ -63,5 +68,9 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+  .links {
+    display: flex;
+    justify-content: space-evenly;
   }
 </style>
