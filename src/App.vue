@@ -1,8 +1,13 @@
 <template>
+  <div>
+    <div class="logo">
+      <img src="./assets/logo.png" />
+    </div>
   <div class="clock">
     <Value :inputValue="hours" />
     <Value :inputValue="minutes" :indicatorLength="6" />
     <Value :inputValue="seconds" :indicatorLength="6" />
+  </div>
   </div>
 </template>
 
@@ -44,9 +49,14 @@ export default {
 <style>
   body {
     display: flex;
+    flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #222831;
+  }
+  .logo{
+    display: flex;
+    justify-content: center;
   }
   .clock{
     width: 800px;
