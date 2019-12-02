@@ -10,8 +10,8 @@
     <Value :inputValue="seconds" :indicatorLength="6" />
   </div>
   <div class="links">
-    <font-awesome-icon :icon="['fab', 'github']" size="6x"  :style="{ color: '#29a19c' }" />
-    <font-awesome-icon :icon="['fab', 'dev']" size="6x"  :style="{ color: '#29a19c' }" />
+    <a href="https://github.com/ikonezg"><font-awesome-icon :icon="['fab', 'github']" size="6x"  :style="{ color: '#29a19c' }" /></a>
+    <a href="https://dev.to/bergermarko"><font-awesome-icon :icon="['fab', 'dev']" size="6x"  :style="{ color: '#29a19c' }" /></a>
   </div>
   </div>
 </template>
